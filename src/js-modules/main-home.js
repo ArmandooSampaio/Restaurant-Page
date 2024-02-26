@@ -7,7 +7,7 @@ function render() {
     const title = createHtmlElement('h1', null, ['white'], 'A Pizzaria');
     const hr = document.createElement('hr');
     const subtitle = createHtmlElement('p', null,  ['text-center', 'white'], 'Pizzas feitas com Amor e Carinho');
-    const button = createHtmlElement('button', null, null, 'ver o Menu');
+    const button = createHtmlElement('button', null, null, 'Ver O Menu');
 
     main.appendChild(bemVindos);
     main.appendChild(title);
