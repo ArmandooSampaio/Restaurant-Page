@@ -44,9 +44,10 @@ function render(){
         div.appendChild(price);
         div.appendChild(hr);
 
-        content.appendChild(main);
+        main.appendChild(div);
 
     });
+    content.appendChild(main);
+};
 
-
-}
+export {render as renderMenu};
