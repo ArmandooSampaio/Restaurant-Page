@@ -1,7 +1,123 @@
+@font-face {
+    font-family: myfont;
+    src: url(font/Cursive\ standard.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    text-align: center;
+
+    
+}
+#content{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 6fr 1fr;
+    background: url("images/Black\ Abstract\ Stone\ Texture\ Zoom\ Virtual\ Background.png");
+    background-size: cover;
+}
+
+.golden{
+    color: #B8860B;
+}
+.white{
+    color: white;
+}
+.gray {
+    color: #262626;
+  }
+p{
+    line-height: 150%;
+}
+
+h1{
+    font-size: 90px;
+    text-transform: uppercase;
+    margin-top: -72px;
+}
+h2{
+    font-size: 40px;
+}
+
+hr {
+    width: 280px;
+    border: 2px solid #c59d5f;
+    margin: 24px auto;
+  }
+.cursive {
+    font-family: myfont;
+    font-size: 85px;
+    text-transform: capitalize;
+  }
+
+button:hover{
+    cursor: pointer;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: #c59d5f;
+    outline: 1px solid white;
+  }
+
+/*Nav*/
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-bottom: 2px solid #c59d5f;
 }
 
 
+.nav-item{
+    font-size: 20px;
+    border: none;
+    background: none;
+}
+
+
+/*footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #c59d5f;
+    
+}
+
+/*main*/
+
+main{
+    height: 100%;
+    background-color: (0, 0, 0.4);
+    overflow: scroll;
+    padding: 60px;
+}
+
+main button{
+    background-color: #B8860B;
+    border: 2px solid black;
+    height: 50px;
+    width: 200px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+main::-webkit-scrollbar {
+    width: 1em;
+}
+  
+  
+main::-webkit-scrollbar-thumb {
+    background-color: #c59d5f;
+    outline: 1px solid white;
+}

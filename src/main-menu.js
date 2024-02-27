@@ -1,4 +1,4 @@
-import {content, createHtmlElement} from ('../index');
+import {contentDiv as content, createHtmlElement} from './index.js';
 
 let menu = [
     {
@@ -26,7 +26,7 @@ function render(){
     const main = document.createElement('main');
     main.classList.add('main');
 
-    const title = createHtmlElement('h1', null, ['gray'], 'Menu');
+    const title = createHtmlElement('h1', null, null, 'Menu');
     const hr = document.createElement('hr');
 
     main.appendChild(title);
@@ -35,8 +35,8 @@ function render(){
     menu.forEach((element) => {
         const div = createHtmlElement('div', null, ['menu-item'], null);
         const name = createHtmlElement('h2', null, ['golden'], element.name);
-        const description = createHtmlElement('p', null, ['gray'], element.description);
-        const price = createHtmlElement('h2', null, ['golden'], item.price);
+        const description = createHtmlElement('p', null, ['white'], element.description);
+        const price = createHtmlElement('h2', null, ['golden'], element.price);
         const hr = createHtmlElement('hr', null, ['menu-hr'], null);
 
         div.appendChild(name);
